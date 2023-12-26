@@ -11,8 +11,10 @@ a {
 h1,
 h2,
 h3,
+p,
+blockquote,
 ul {
-  margin: 0px;
+  margin: 0;
 }
 ul {
   padding: 0;

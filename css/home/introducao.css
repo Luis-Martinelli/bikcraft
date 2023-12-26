@@ -59,4 +59,7 @@
     font-size: 32px;
     margin-bottom: 16px;
   }
+  .introducao-conteudo p {
+    margin-bottom: 16px;
+  }
 }
