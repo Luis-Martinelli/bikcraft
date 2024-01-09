@@ -1,5 +1,8 @@
 @import './global/global.css';
+/* Header */
 @import './global/header.css';
+/* Footer */
+@import './global/footer.css';
 /* Cores  */
 @import './utilidades/cores.css';
 /* Tipografia */
@@ -16,3 +19,11 @@
 @import './home/parceiros.css';
 /* Depoimentos */
 @import './home/depoimentos.css';
+/* Seguros */
+@import './seguros/seguros.css';
+@import './seguros/perguntas.css';
+@import './seguros/vantagens.css';
+/* Termos */
+@import './termos/termos.css';
+/* Bicicletas */
+@import './bicicletas/bicicletas.css';
