@@ -23,7 +23,6 @@ parametros.forEach(ativarProduto);
 
 // Ativar bicicletas
 const bicicleta = new URLSearchParams(location.search);
-console.log(bicicleta);
 
 function ativarBicicleta(bicicleta) {
   const elemento = document.getElementById(bicicleta);
@@ -35,7 +34,6 @@ parametros.forEach(ativarBicicleta);
 
 //Expandir perguntas
 const perguntas = document.querySelectorAll('.perguntas button');
-console.log(perguntas);
 
 function ativarPergunta(event) {
   const pergunta = event.currentTarget;
@@ -50,3 +48,8 @@ function eventosPerguntas(pergunta) {
   pergunta.addEventListener('click', ativarPergunta);
 }
 perguntas.forEach(eventosPerguntas);
+
+//Animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

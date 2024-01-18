@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bickcraft - Bicicletas Elétricas</title>
     <meta name="description" content="Termos e Condições" />
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,10 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
     </style>
+
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
     <header class="header-bg">
@@ -35,16 +40,18 @@
     <main class="introducao-bg">
       <div class="container introducao">
         <div class="introducao-conteudo">
-          <h1 class="font-1-xxl">
+          <h1 class="font-1-xxl fadeInDown" data-anime="200">
             Bicicletas sob medida<span class="cor-p1">.</span>
           </h1>
-          <p class="font-2-l">
+          <p class="font-2-l cor-5 fadeInDown" data-anime="400">
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
-          <a class="btn" href="./bicicletas.html">Escolha a sua</a>
+          <a class="btn fadeInDown" href="./bicicletas.html" data-anime="600"
+            >Escolha a sua</a
+          >
         </div>
-        <div class="introducao-imagem">
+        <div class="introducao-imagem fadeInDown" data-anime="800">
           <img
             src="./img/fotos/introducao.jpg"
             alt="Bicicleta elétrica preta"
@@ -228,7 +235,7 @@
         </p>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

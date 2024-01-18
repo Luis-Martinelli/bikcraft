@@ -27,7 +27,6 @@
   background: url(../../img/icones/seta-abrir.svg);
   transition: 0.3s;
 }
-/* .perguntas button:hover::after, */
 .perguntas button[aria-expanded='false']::after {
   transform: rotate(180deg);
 }
@@ -43,13 +42,16 @@
   width: 100%;
   text-align: left;
 }
-.perguntas dd {
+.js .perguntas dd {
   display: none;
+}
+.perguntas dd {
   padding-left: 20px;
   padding-top: 12px;
   max-width: 80ch;
+  transition: 2s;
 }
-.perguntas dd.ativa {
+.js .perguntas dd.ativa {
   display: block;
 }
 

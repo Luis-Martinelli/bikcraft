@@ -36,3 +36,5 @@
 @import './contato/lojas.css';
 /* Orçamento */
 @import './orcamento/orcamento.css';
+/* Animação */
+@import './utilidades/animacao.css';

@@ -9,8 +9,9 @@
       name="description"
       content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente . Explore o mundo na sua velocidade com Bikcraft."
     />
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +21,10 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
     </style>
+
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body id="seguros">
     <header class="header-bg">
@@ -46,7 +51,7 @@
         </div>
       </div>
 
-      <div class="seguros container">
+      <div class="seguros container" data-anime="200">
         <div class="seguros-item">
           <h3 class="font-1-xl cor-6">PRATA</h3>
           <span class="font-1-xl cor-0"
@@ -64,7 +69,7 @@
             >Inscreva-se</a
           >
         </div>
-        <div class="seguros-item">
+        <div class="seguros-item" data-anime="400">
           <h3 class="font-1-xl cor-p1">OURO</h3>
           <span class="font-1-xl cor-0"
             >R$ 199 <span class="font-1-xs cor-6">mensal</span></span
@@ -152,12 +157,12 @@
             <button
               class="font-1-m-b"
               aria-controls="pergunta1"
-              aria-expanded="true"
+              aria-expanded="false"
             >
               Qual forma de pagamento vocês aceitam?
             </button>
           </dt>
-          <dd id="pergunta1" class="font-2-s cor-9 ativa">
+          <dd id="pergunta1" class="font-2-s cor-9">
             Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO
             e American Express. Para pagamentos à vista também aceitarmos PIX e
             Boleto através do PagSeguro.
@@ -300,6 +305,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
